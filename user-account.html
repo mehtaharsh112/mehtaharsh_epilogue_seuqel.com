@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>User-Account</title>
+    <style>
+        p {
+            color: #BFBFBF !important;
+        }
+
+        .text-editor textarea:focus {
+            box-shadow: none !important;
+            color: black;
+        }
+
+        ::placeholder {
+            color: #C2C2C2 !important;
+            font-size: 14px;
+        }
+
+        .pointer-cursor img {
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+        }
+
+        .pointer-cursor img:hover {
+            background-color: lightgrey;
+        }
+        .back-img-one {
+            background-image: url('./images/img-gun-user.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .safety-color {
+            color: yellow;
+            font-weight: 500;
+        }
+
+        .icon-padding {
+            color: red;
+            font-size: 80px;
+            padding-top: 30px;
+        }
+
+        .watching {
+            color: burlywood;
+            background-color: #301934;
+        }
+
+        .form-control:focus
+        {
+            box-shadow: none !important;
+            background-color: transparent;
+            color: white;
+        }
+
+        .btn
+        {
+            box-shadow: none !important;
+        }
+        .width-button button
+        {
+            width: 10% !important;
+        }
+
+        .searchmovie .form-control
+        {
+            background-color: transparent !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-dark py-2">
+            <div class="d-flex justify-content-between">
+                <p class="text-light mb-0 fs-5">Welcome, Harsh</p>
+                <div class="d-flex">
+                    <a href="#"></a>
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user text-light fs-5"></i><span class="ps-4">My Account</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#offers">Offers</a></li>
+                          <li><a class="dropdown-item" href="signin.html">Sign Out</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="row back-img-one text-center vh-100 d-flex align-items-center">
+            <p class="mb-0 display-3 safety-color">YOUR SAFETY, OUR EFFORTS<br>BEST OTT SERVICE</p>
+        </div>
+    </div>
+    <div class="container border mt-5">
+        <div class="row">
+            <p class="display-6 mb-0 ps-3 mb-4">Chapter One</p>
+        </div>
+        <div class="row">
+            <form action="" class="text-editor">
+                <textarea class="form-control border-0 bold" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore quos qui dicta expedita aspernatur animi tempore nobis a quis modi? Nobis ipsam facere itaque quidem fuga fugiat corrupti necessitatibus rem.Nobis ipsam facere itaque quidem fuga fugiat corrupti necessitatibus rem. Nobis ipsam facere itaque quidem fuga fugiat corrupti necessitatibus rem."></textarea>
+            </form>
+        </div>
+        <div class="row mt-5 pt-3 d-flex justify-content-between pb-4">
+            <div class="col-5 d-flex justify-content-evenly pointer-cursor">
+                <img onclick="bold()" ondblclick="nobold()" src="https://img.icons8.com/officexs/16/000000/bold.png" />
+                <img onclick="italic()" ondblclick="noitalic()"
+                    src="https://img.icons8.com/officexs/16/000000/italic.png" />
+                <img onclick="underline()" ondblclick="nounderline()"
+                    src="https://img.icons8.com/officexs/16/000000/underline.png" />
+
+                <img src="https://img.icons8.com/material-rounded/24/000000/vertical-line.png" />
+
+                <img onclick="heading1()" src="https://img.icons8.com/office/16/000000/header-1.png" />
+                <img onclick="heading2()" src="https://img.icons8.com/officexs/16/000000/header-2.png" />
+
+                <img src="https://img.icons8.com/material-rounded/24/000000/vertical-line.png" />
+
+                <img onclick="link()" src="https://img.icons8.com/small/16/000000/link.png" />
+
+                <img src="https://img.icons8.com/material-rounded/24/000000/vertical-line.png" />
+
+                <img onclick="bulletnumber()" src="https://img.icons8.com/small/16/000000/numbered-list.png" />
+                <img onclick="bullercircle()" src="https://img.icons8.com/small/16/000000/bulleted-list.png" />
+
+                <img src="https://img.icons8.com/material-rounded/24/000000/vertical-line.png" />
+
+                <img onclick="none()"
+                    src="https://img.icons8.com/fluency-systems-regular/48/000000/remove-format.png" />
+            </div>
+            <div class="col-2 d-flex pointer-cursor justify-content-evenly">
+                <p class="mb-0 pb-0" id="countText"></p>
+                <img class="mt-1"
+                    src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-up-arrow-arrow-flatart-icons-outline-flatarticons-1.png" />
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-fluid bg-dark">
+        <div class="row mx-auto searchmovie">
+            <div class="col-6 mx-auto">
+                <p class="mb-0 text-center text-white fs-1">Search Your Movie Info</p>
+                <form action="" class="my-3">
+                        <input type="text" class="form-control mx-auto w-75 text-center" placeholder="Search Movie">
+                </form>
+            </div>
+        </div>
+       <div class="row justify-content-center width-button">
+        <button type="button" class="btn btn-info text-center">Search</button>
+       </div>
+    </div> -->
+    <div class="container-fluid">
+        <div class="row">
+            <p class="mb-0 text-center fs-1 watching">Start Watching Now</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 py-5 py-md-0">
+                <div class="card" style="width: 100%;">
+                    <video width="100%" height="100%" autoplay muted>
+  <source src="./videos/Red.Notice.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Red Notice</h5>
+                        <p class="card-text">Cast : - Gal Gadot, Ryan Reynolds, Dwayne Johnson</p>
+                        <p class="card-text">Story : - In the world of international crime, an Interpol agent attempts to hunt down and capture the world's most wanted art thief.</p>
+                        <a href="#" class="btn btn-primary disabled">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 py-5 py-md-0">
+                <div class="card" style="width: 100%;">
+                    <video width="100%" height="100%" autoplay muted>
+                        <source src="./videos/Red.Notice.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Red Notice</h5>
+                        <p class="card-text">Cast : - Gal Gadot, Ryan Reynolds, Dwayne Johnson</p>
+                        <p class="card-text">Story : - In the world of international crime, an Interpol agent attempts to hunt down and capture the world's most wanted art thief.</p>
+                        <a href="#" class="btn btn-primary disabled">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 pb-5">
+                <div class="card" style="width: 100%;">
+                    <video width="100%" height="100%" autoplay muted controls>
+                        <source src="./videos/Red.Notice.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Red Notice</h5>
+                        <p class="card-text">Cast : - Gal Gadot, Ryan Reynolds, Dwayne Johnson</p>
+                        <p class="card-text">Story : - In the world of international crime, an Interpol agent attempts to hunt down and capture the world's most wanted art thief.</p>
+                        <a href="#" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 pb-5">
+                <div class="card" style="width: 100%;">
+                    <video width="100%" height="100%" autoplay muted>
+                        <source src="./videos/Red.Notice.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Red Notice</h5>
+                        <p class="card-text">Cast : - Gal Gadot, Ryan Reynolds, Dwayne Johnson</p>
+                        <p class="card-text">Story : - In the world of international crime, an Interpol agent attempts to hunt down and capture the world's most wanted art thief.</p>
+                        <a href="#" class="btn btn-primary disabled">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card" style="width: 100%;">
+                    <video width="100%" height="100%" autoplay muted>
+                        <source src="./videos/Red.Notice.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Red Notice</h5>
+                        <p class="card-text">Cast : - Gal Gadot, Ryan Reynolds, Dwayne Johnson</p>
+                        <p class="card-text">Story : - In the world of international crime, an Interpol agent attempts to hunt down and capture the world's most wanted art thief.</p>
+                        <a href="#" class="btn btn-primary disabled">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card" style="width: 100%;">
+                    <video width="100%" height="100%" autoplay muted>
+                        <source src="./videos/Red.Notice.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Red Notice</h5>
+                        <p class="card-text">Cast : - Gal Gadot, Ryan Reynolds, Dwayne Johnson</p>
+                        <p class="card-text">Story : - In the world of international crime, an Interpol agent attempts to hunt down and capture the world's most wanted art thief.</p>
+                        <a href="#" class="btn btn-primary disabled">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <p class="watching fs-1 text-center" id="offers">View Latest Offers</p>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="card" style="width: 100%;">
+                    <img src="./images/SNOWPIERCER_Action.jpg" class="card-img-top" >
+                    <div class="card-body text-center">
+                      <p class="card-text"><b>Snow Piercer</b></p>
+                      <p>Prebook Now (5% OFF)</p>
+                      <a href="buy.html" class="btn btn-success">Buy</a>
+                      <p id="snow" class="fs-2 text-info pt-3"></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="card" style="width: 100%;">
+                    <img src="./images/star-wars-the-book-of-boba-fett_Action.webp" class="card-img-top" >
+                    <div class="card-body text-center">
+                      <p class="card-text"><b>Star Wars- The Book of boba-fett</b></p>
+                      <p>Prebook Now (15% OFF)</p>
+                      <a href="buy.html" class="btn btn-danger disabled">Buy</a>
+                      <p id="star" class="fs-2 text-danger pt-3"></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="card" style="width: 100%;">
+                    <img src="./images/unfortunate events.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <p class="card-text"><b>Unfortunate Events</b></p>
+                      <p>Prebook Now (20% OFF)</p>
+                      <a href="buy.html" class="btn btn-success">Buy</a>
+                      <p id="events" class="fs-2 text-success pt-3"></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="card" style="width: 100%;">
+                    <img src="./images/cursed.png" class="card-img-top" >
+                    <div class="card-body text-center">
+                      <p class="card-text"><b>Cursed</b></p>
+                      <p>Prebook Now (10% OFF)</p>
+                      <a href="buy.html" class="btn btn-success">Buy</a>
+                      <p id="cursed" class="fs-2 text-success pt-3"></p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row px-5 py-5 text-center">
+            <div class="col-12 col-sm-6 col-xl-4">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <i class="fa-solid fa-user-tie icon-padding"></i>
+                    </div>
+                    <div class="col-xl-7">
+                        <p class="mb-0"><b>PROFESSIONAL STAFF</b></p>
+                        <p class="mb-0 mt-3">Working staff is prominently qualified with a higher degree course in
+                            specific computer languages.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <i class="fa-solid fa-toolbox icon-padding"></i>
+                    </div>
+                    <div class="col-xl-7">
+                        <p class="mb-0"><b>LATEST EPILOGUE SEQUEL</b></p>
+                        <p class="mb-0 mt-3">Eminent personlity actors casted in every webseries and movies in inflated
+                            and elevated resolution.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-xl-4">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <i class="fa-solid fa-envelope-open-text icon-padding"></i>
+                    </div>
+                    <div class="col-xl-7">
+                        <p class="mb-0"><b>24/7 SUPPORT</b></p>
+                        <p class="mb-0 mt-3">Employees are working in day and night shifts individually supplying
+                            quality service to every members.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <script src="https://kit.fontawesome.com/32e69aa5c9.js" crossorigin="anonymous"></script>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("March 25, 2022 12:30:00").getTime();
+        var countDownDate2 = new Date("March 05, 2022 12:30:00").getTime();
+        var countDownDate3 = new Date("April 10, 2022 12:30:00").getTime();
+        var countDownDate4 = new Date("June 20 , 2022 12:30:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+          var distance2 = countDownDate2 - now;
+          var distance3 = countDownDate3 - now;
+          var distance4 = countDownDate4 - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+          var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+
+          var days3 = Math.floor(distance3 / (1000 * 60 * 60 * 24));
+          var hours3 = Math.floor((distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes3 = Math.floor((distance3 % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds3 = Math.floor((distance3 % (1000 * 60)) / 1000);
+
+          var days4 = Math.floor(distance4 / (1000 * 60 * 60 * 24));
+          var hours4 = Math.floor((distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes4 = Math.floor((distance4 % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds4 = Math.floor((distance4 % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("snow").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";2
+
+          document.getElementById("star").innerHTML = days2 + "d " + hours2 + "h "
+          + minutes2 + "m " + seconds2 + "s ";
+
+          document.getElementById("events").innerHTML = days3 + "d " + hours3 + "h "
+          + minutes3 + "m " + seconds3 + "s ";
+
+          document.getElementById("cursed").innerHTML = days4 + "d " + hours4 + "h "
+          + minutes4 + "m " + seconds4 + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance< 0) {
+            clearInterval(x);
+            document.getElementById("snow").innerHTML = "EXPIRED";
+          }
+
+          if(distance2<0)
+          {
+              document.getElementById('star').innerHTML = "EXPIRED"
+          }
+
+          if(distance3<0)
+          {
+              document.getElementById('events').innerHTML = "EXPIRED"
+          }
+
+          if(distance4<0)
+          {
+              document.getElementById('cursed').innerHTML = "EXPIRED"
+          }
+
+        }, 1000);
+        
+        </script>
+
+
+<script>
+    
+    function bold() {
+            document.getElementById('exampleFormControlTextarea1').style.fontWeight = 'bold'
+        }
+
+
+        function nobold() {
+            document.getElementById('exampleFormControlTextarea1').style.fontWeight = 'normal'
+        }
+
+        function italic() {
+            document.getElementById('exampleFormControlTextarea1').style.fontStyle = 'italic'
+        }
+
+        function noitalic() {
+            document.getElementById('exampleFormControlTextarea1').style.fontStyle = 'normal'
+        }
+
+        function underline() {
+            document.getElementById('exampleFormControlTextarea1').style.textDecoration = 'underline'
+        }
+
+        function nounderline() {
+            document.getElementById('exampleFormControlTextarea1').style.textDecoration = 'none'
+        }
+
+        function heading1() {
+            document.getElementById('exampleFormControlTextarea1').style.fontWeight = 'bold'
+            document.getElementById('exampleFormControlTextarea1').style.fontSize = '2em'
+        }
+
+        function heading2() {
+            document.getElementById('exampleFormControlTextarea1').style.fontWeight = 'bold'
+            document.getElementById('exampleFormControlTextarea1').style.fontSize = '1.5em'
+        }
+
+        // function link() {
+        //     var x = document.createElement('hello')
+        //     x.setAttribute("type", "file");
+        //     document.body.appendChild(x);
+        // }
+
+        function bulletnumber() {
+            document.getElementById("exampleFormControlTextarea1").style.listStyleType = "number";
+        }
+
+        function bulletcircle() {
+            document.getElementById('exampleFormControlTextarea1').style.listStyleType = 'circle'
+        }
+
+        function none() {
+            document.getElementById('exampleFormControlTextarea1').style.fontWeight = 'normal'
+            document.getElementById('exampleFormControlTextarea1').style.fontSize = '16px'
+            document.getElementById('exampleFormControlTextarea1').style.fontStyle = 'normal'
+            document.getElementById('exampleFormControlTextarea1').style.textDecoration = 'none'
+        }
+
+        const textArea = document.getElementById('exampleFormControlTextarea1');
+        textArea.addEventListener('input', () => {
+            var textLn = textArea.value;
+            document.getElementById('countText').innerHTML = getWordCount(textLn) + ' words';
+        });
+
+        function getWordCount(str) {
+            return str.trim().split(/\s+/).length;
+        }
+
+</script>
+    <!-- <script>
+        var randomMovieArray = ['Money Heist', 'Game Of Thrones']
+        var randomNumber = Math.floor((math.round * randomMovieArray.length - 1) + 1)
+        var randomMovie = randomMovieArray[randomNumber];
+
+        function apiCall()
+        {
+            $.getJSON('https://www.omdbapi.com/t=' + encodeURI(randomMovie));
+           var image = "response.poster";
+        }
+    </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Pre-booking</title>
+    <style>
+        .color {
+            background-image: url('./images/buy-back.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .color2 {
+            color: white;
+        }
+
+        .color3 {
+            background-color: lightseagreen;
+            padding: 20px 90px 20px 90px;
+            border-radius: 30px;
+        }
+
+        .color3 input {
+            background-color: lightsteelblue;
+            border-radius: 20px;
+            padding: 10px 20px 10px 20px;
+            border: none;
+        }
+
+        .color3 input:focus {
+            background-color: lightsalmon;
+            border: none;
+        }
+
+        .pay {
+            border: none;
+            border-radius: 20px;
+            padding: 10px 50px 10px 50px;
+            background-color: aquamarine;
+            margin-right: 45px;
+        }
+
+        .pay-col
+        {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row color">
+            <div class="col-12 d-flex justify-content-center align-items-center vh-100 color2">
+                <form action="" class="color3">
+                    <p>Card Number</p>
+                    <div>
+                        <input type="number" placeholder="Enter Your Card Number" class="w-100">
+                    </div>
+                    <div class="py-3">
+                        <input type="text" placeholder="Name on the Card" class="w-100">
+                    </div>
+                    <div class="d-flex mb-3">
+                        <input type="number" placeholder="MM/YY" class="w-25">
+                        <div class="ms-5"><input type="number" placeholder="CVV" class="w-50"></div>
+                    </div>
+                    <div class="d-flex">
+                        <button type="submit" value="submit" class="pay" id="paynow" onclick="pay();"><a href="user-account.html" class="text-decoration-none pay-col">Pay 780 R.s</a></button>
+                        <button type="submit" value="submit" class="pay bg-danger"><a href="user-account.html"
+                                class="text-decoration-none text-white">Cancel</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+       
+        function pay()
+        {
+            var pay = document.getElementById('paynow')
+            alert('Payment has been done successfully');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* #loader
+{
+  width: 100%;
+  height: 100%;
+  background: url('./images/3dgifmaker26646.gif') !important;
+  z-index: 99999999 !important;
+  background-repeat: no-repeat;
+} */
+
+h1,h2,h3,h4,h5,h6,p 
+{
+  margin-bottom: 0 !important;
+}
+
+.footer-anchor a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-anchor a:hover {
+  color: lightgreen
+}
+/* 
+.thriller {
+  color: rgb(114, 146, 0);
+  font-size: 50px;
+  background-color: aqua;
+} */
+
+.thriller-trailer p {
+  font-size: 20px;
+}
+
+.hover-anchor:hover
+{
+  background-color: rgba(7, 202, 0, 0.5);
+  border-radius: 100px;
+}
+
+.purple-icon
+{
+  color: lightgreen;
+}
+
+.background-subs
+{
+  background-color: #BABEC2;
+}
+
+.background-col-1
+{
+background-color: #20B2AA;
+}
+
+.background-col-1 p
+{
+  color: white;
+}
+
+.background-col-1-one
+{
+  background-color:	#00CED1 ;
+}
+
+.background-col-1-two
+{
+  background-color:#008B8B;
+}
+
+.background-col-1-three
+{
+  background-color: tomato;
+}
+
+
+.background-subs .row>* {
+ 
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.bord-pic
+{
+  border: 10px solid #B12BFB;
+  border-radius: 100%;
+}
+
+/* 
+.border-subs
+{
+  border: 2px solid lightgreen
+} */
